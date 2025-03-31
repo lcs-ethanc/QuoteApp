@@ -11,6 +11,7 @@
 		444BAB202D9B1B3E003B8DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444BAB1B2D9B1B3E003B8DC2 /* Assets.xcassets */; };
 		444BAB212D9B1B3E003B8DC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444BAB1C2D9B1B3E003B8DC2 /* ContentView.swift */; };
 		444BAB222D9B1B3E003B8DC2 /* QuoteAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444BAB1D2D9B1B3E003B8DC2 /* QuoteAppApp.swift */; };
+		444BAB272D9B1B78003B8DC2 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444BAB262D9B1B78003B8DC2 /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		444BAB1B2D9B1B3E003B8DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		444BAB1C2D9B1B3E003B8DC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		444BAB1D2D9B1B3E003B8DC2 /* QuoteAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteAppApp.swift; sourceTree = "<group>"; };
+		444BAB262D9B1B78003B8DC2 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		444BAB232D9B1B4B003B8DC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				444BAB262D9B1B78003B8DC2 /* Quote.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				444BAB212D9B1B3E003B8DC2 /* ContentView.swift in Sources */,
+				444BAB272D9B1B78003B8DC2 /* Quote.swift in Sources */,
 				444BAB222D9B1B3E003B8DC2 /* QuoteAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
