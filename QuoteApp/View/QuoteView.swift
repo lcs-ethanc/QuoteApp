@@ -21,6 +21,26 @@ struct QuoteView: View {
     
     // MARK: Computed Properties
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        VStack{
+            
+            //show joke if exist
+            if let currentQuote = viewModel.currentQuote {
+                Group{
+                    Text(currentQuote.quoteText)
+                        .padding(.bottom,100)
+                    
+                    Text(currentQuote.quoteAuthor)
+                    
+                }
+                .font(.title)
+                .multilineTextAlignment(.center)
+            }
+        }
     }
 }
+
+#Preview {
+    QuoteView()
+}
+
+
