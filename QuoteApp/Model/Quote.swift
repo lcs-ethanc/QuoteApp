@@ -16,3 +16,13 @@ struct Quote: Identifiable, Codable {
     let senderLink: String
     let id = UUID()
 }
+
+
+//Example quote for testing
+
+let exampleQuote = Quote(
+    quoteText: "quoteText",
+    quoteAuthor: "Author Name",
+    senderName: "Sender Name",
+    senderLink: " Sender Link"
+)
