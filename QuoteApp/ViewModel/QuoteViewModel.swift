@@ -48,6 +48,13 @@ class QuoteViewModel {
             
             //decoding good = return data
             self.currentQuote = decodedData
+        } catch{
+            
+            //Show an error
+            print("Count not retrieve data from endpoint, or could not decode into an instance of a Swift data type.")
+            print("----")
+            
+            print(error)
         }
     }
     
