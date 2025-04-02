@@ -29,6 +29,26 @@ class QuoteViewModel {
             print("Invalid address for JSON endpoint")
             return
         }
+        
+        //Get data
+        do{
+            //Fetch
+            let (data, _) = try await URLSession.shared.data(from: url)
+            
+            //Print
+            print("Got data from endpoint, contents of response are:")
+            print(String(data: data, encoding: .utf8)!)
+            
+            //Decode into swift data type
+            
+            //create decoder
+            let decoder = JSONDecoder()
+            
+            let decodedData = try decoder.decode(Quote.self, from: data)
+            
+            //decoding good = return data
+            self.currentQuote = decodedData
+        }
     }
     
 }
